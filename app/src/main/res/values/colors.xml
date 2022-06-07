@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="whitecolor">#ffffff</color>
+    <color name="blackcolor">#000000</color>
+    <color name="transparentcolor">#00000000</color>
+    <color name="maintoolbarcolor">#19B2FA</color>
+    <color name="aqitoolbarcolor">#5F4A58</color>
+    <color name="sunshadowcolor">#50f9d71c </color>
+    <color name="suncolor">#f9d71c </color>
+    <color name="trancolor">#40f9d71c </color>
+    <color name="greencolor">#47E60E </color>
+    <color name="yellowcolor">#FEAD16 </color>
+    <color name="moderatecolor">#F08510 </color>
+    <color name="redcolor">#F36466 </color>
+    <color name="vpoorcolor">#873AC0 </color>
+</resources>

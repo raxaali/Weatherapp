@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_dailyday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Wednesday \n August 11"
+        android:textColor="@color/whitecolor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/dailydivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="10dp"
+        android:background="@color/whitecolor"
+        app:layout_constraintTop_toBottomOf="@+id/tv_dailyday" />
+
+    <RelativeLayout
+        android:id="@+id/day_title_iconlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dailydivider"
+       >
+
+        <TextView
+            android:id="@+id/tv_daytitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Day"
+            android:textColor="#ffd700" />
+
+        <ImageView
+            android:id="@+id/daily_weathericon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fitsSystemWindows="true"
+            android:src="@drawable/sun" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/daylayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="8"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/day_title_iconlayout"
+        app:layout_constraintTop_toBottomOf="@+id/dailydivider"
+        app:layout_constraintBottom_toTopOf="@+id/tv_dayweather_desc">
+
+
+        <TextView
+            android:id="@+id/daily_weatherdesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="Partly Cloud"
+            android:textColor="@color/whitecolor" />
+
+
+        <TextView
+            android:id="@+id/tv_dailyrain_chance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_rainchances"
+            android:drawableLeft="@drawable/ic_rainchances"
+            android:text="41%"
+            android:textColor="@color/whitecolor" />
+
+        <TextView
+            android:id="@+id/tv_dailywind_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_wind"
+            android:drawableLeft="@drawable/ic_wind"
+            android:text="41km/h"
+            android:textColor="@color/whitecolor" />
+
+        <TextView
+            android:id="@+id/tv_dailyhumidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_humidity"
+            android:drawableLeft="@drawable/ic_humidity"
+            android:text="41%"
+            android:textColor="@color/whitecolor" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_dayweather_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="clear to partial cloud, hazy"
+        android:textColor="@color/whitecolor"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/day_title_iconlayout"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+
+    <RelativeLayout
+        android:id="@+id/night_title_iconlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_dayweather_desc">
+
+        <TextView
+            android:id="@+id/tv_nighttitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Night"
+            android:textColor="#006aff" />
+
+        <ImageView
+            android:id="@+id/daily_nighticon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fitsSystemWindows="true"
+            android:src="@drawable/ic_moon" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/nightlayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="8"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/night_title_iconlayout"
+        app:layout_constraintTop_toBottomOf="@+id/tv_dayweather_desc"
+        app:layout_constraintBottom_toTopOf="@+id/tv_nightweather_desc">
+
+
+        <TextView
+            android:id="@+id/daily_nightweatherdesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="Partly Cloud"
+            android:textColor="@color/whitecolor" />
+
+
+        <TextView
+            android:id="@+id/tv_dailyrain_chancenight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_rainchances"
+            android:drawableLeft="@drawable/ic_rainchances"
+            android:text="41%"
+            android:textColor="@color/whitecolor" />
+
+        <TextView
+            android:id="@+id/tv_dailywind_speednight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_wind"
+            android:drawableLeft="@drawable/ic_wind"
+            android:text="41km/h"
+            android:textColor="@color/whitecolor" />
+
+        <TextView
+            android:id="@+id/tv_dailyhumiditynight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_humidity"
+            android:drawableLeft="@drawable/ic_humidity"
+            android:text="41%"
+            android:textColor="@color/whitecolor" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_nightweather_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="clear to partial cloud, hazy"
+        android:textColor="@color/whitecolor"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/night_title_iconlayout"
+        app:layout_constraintBottom_toBottomOf="@+id/dailydivider2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="10dp"/>
+
+    <View
+        android:id="@+id/dailydivider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="10dp"
+        android:background="@color/whitecolor"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nightweather_desc"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

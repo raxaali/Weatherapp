@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="loc_desc">Location access is required for updates and weather reports. The location has to be accessed while using app.We will never use your location in background</string>
+    <string name="privacypolicy_linktext"><u>Terms and Conditions</u>.</string>
+
+
+    <!-- Real Ad Ids   -->
+        <string name="app_id">ca-app-pub-5286788271173304~1956736463</string>
+        <string name="appopen_id">ca-app-pub-5286788271173304/4215551377</string>
+        <string name="interstitial_id">ca-app-pub-5286788271173304/1110558656</string>
+        <string name="bannerid">ca-app-pub-5286788271173304/9966571503</string>
+        <string name="native_id">ca-app-pub-5286788271173304/4714244825</string>
+
+
+    <!-- Test Ad Ids   -->
+
+    <!--<string name="app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="appopen_id">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="interstitial_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="bannerid">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="native_id">ca-app-pub-3940256099942544/2247696110</string>-->
+</resources>
